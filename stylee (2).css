@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+html, body {
+	background-color: #332219;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* header styling */
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+}
+
+#title {
+	color:#A0C49D;
+	font-size: 3em;
+	padding:  1px 550px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+/* main styling */
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	opacity: 0.9;
+	color: #120901;
+	font-size: 1em;
+	margin: 0px 50px;
+	border: 2px solid #120901;
+	border-radius: 5px;
+	background-color: #A0C49D;
+}
+
+#description {
+	font-size: 1.1em;
+	text-align: center;
+}
+
+form, #todays-date > select, input, textarea, #dropdown {
+	padding: 5px;
+	margin-left: 5px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-label {
+	display: flex;
+	justify-content: stretch;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 5px;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+
+form > div {
+	padding: 5px;
+	margin: 1px 5% 15px 5%;
+}
+
+ul {
+	padding-left: 0px;
+}
+
+li{
+	padding: 2px 2px 2px 5px;
+	display: inline-block;
+	list-style: none;
+}
+
+input {
+	margin: 5px;
+}
+
+#email-phone > input, #dogName > input, #first-last-name > input, #address > input {
+	width: 90%;
+}
+#gender {
+	display: flex;
+	justify-content: stretch;
+}
+
+#housing {
+	display: flex;
+	flex-direction: column;
+}
+
+#housing > select {
+	margin: 10px;
+	width: 90%;
+}
+
+textarea {
+	resize:both;
+	width: 85%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#button {
+	display: flex;
+	justify-content: center;
+}
+
+#submit {
+	color: #ffffff;
+	background: #A0C49D;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 2px;
+	border-color: #ffffff;
+}
+
+#submit:hover {
+	background-color: #332219;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+/* above footer styling */
+
+#above-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+}
+
+
+/* footer */
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:  #A0C49D;
+	animation-duration: 0.5s;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+	color: white;
+}
+
+.footer:hover {
+	color:  #A0C49D;
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	-ms-transition-duration: 0.6s;
+	-o-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+.list-inline {
+	flex-direction: row;
+	justify-content: center;
+
+}
+
+.list-inline-item {
+	padding: 0 10px;
+}
+
+@media (min-width: 760px) and (min-device-width: 760px) {
+	header {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	#title {
+		font-size: 3em;
+	}
+
+	#email-phone > input, #dogName > input, #first-last-name > input, #address > input {
+		width: auto;
+	}
+
+	.main-label {
+		display: inline-block;
+	}
+
+	#copyright {
+		font-size: 20px;
+	}
+
+	.fab {
+		font-size: 25px;
+	}
+  
+  #housing > select {
+	width: 300px;
+}
+}

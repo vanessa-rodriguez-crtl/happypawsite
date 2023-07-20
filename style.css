@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: max-content;
+    height: max-content;
+}
+.main{
+    width: 98%;
+    height: 100vh;
+    background:url(bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 1500px;
+    height: 78px;
+    margin-left: 25px;
+    padding: 18px;
+}
+.icon{
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+.logo{
+    color: #A0C49D;
+    font-size: 20px;
+    font-family: Arial;
+    padding-left: 50px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 18px;
+    margin-bottom:5px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:#A0C49D;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 15%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #A0C49D;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+   
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #fff;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color:  #332219;
+}
+
+.content span{
+    color: #A0C49D;
+    font-size: 65px
+}
+
+@media screen and (max-width:710px) {
+    .navbar{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .main{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .icon{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .logo{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .menu{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .content{
+        text-align: center;
+    }
+}
+

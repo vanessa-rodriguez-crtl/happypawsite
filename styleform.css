@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+:root{
+    --main-color: #A0C49D;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+html, body {
+	background-color: #332219;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* header styling */
+
+header {
+	display: inline;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#title {
+	color:#A0C49D;
+	font-size: 3em;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding-top: 20px;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.btn{
+    display: inline-block;
+    padding:.9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color:var(--main-color);
+    background: none;
+    border:var(--border);
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    border-radius: var(--border-radius-hover);
+    border:var(--border-hover);
+}
+
+.header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    background: #332219;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem 9%;
+    color:#A0C49D;
+}
+
+.header .logo{
+    color:var(--main-color);
+    font-size: 2.3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header .logo i{
+    padding-left: .5rem;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+.header .navbar a:hover{
+    color:#A0C49D;
+}
+
+.header .btn{
+    margin-top: 2;
+    margin-bottom: 2;
+}
+
+#menu-btn{
+    font-size: 3rem;
+    color:var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+
+.main_bg{
+    background-image: url(HappyPawsBG.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.form{
+    width: 650px;
+}
+
+.form-text{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.form-text h1 span img{
+    margin: 0 10px;
+
+}
+.form-text h1{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.form-text p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+textarea {
+    background: none;
+    height: 60px;
+	width: 632px;
+    border: 1px solid #A0C49D;
+	font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.main-form div{
+    margin: 10px 10px;
+    width: 300px;
+    display: inline-block;
+}
+.main-form div input {
+    text-transform: none;
+    width: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    border: 1px solid  #A0C49D;
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div select{
+    width: 104%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: none;
+    border: 1px solid #A0C49D;
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    padding: 3px 0 3px 10px;
+    margin-top: 10px;
+}
+.main-form div span{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+}
+#submit input{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    background-color: #A0C49D !important;
+    color:#332219 !important;
+    transition: all .3s;
+}
+#submit input:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    background-color:#332219 !important;
+    color: #557A46 !important;
+}
+#submit input:active{
+    font-size: 20px;
+    background-color: rgb(46, 20, 5) !important;
+    color:  #557A46 !important;
+}
+
+
+@media screen and (max-width:710px) {
+    .main-form{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .header{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    .main-form div{
+        text-align: center;
+    }
+}
+@media screen and (max-width:710px) {
+    #submit{
+        text-align: center;
+    }
+}

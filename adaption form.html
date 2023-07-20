@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Form</title>
+  <link rel="stylesheet" href="styleform.css">
+  <link href="logo.png" rel="icon">
+</head>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    
+        <a href="https://www.facebook.com/profile.php?id=100083399168177&mibextid=ZbWKwL" class="logo">Happy Paws</a>
+    
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="donation.html">DONATION</a>
+        </nav>
+    </header>
+<body>
+<div class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <form id="survey-form" action="https://formspree.io/f/mrgwbgjr" method="POST">
+        <h1 class="heading"> ADAPTION <span> FORM </span></h1>
+    <p id="description"><em>Thank you for wishing to offer a rescue dog a home! Please could you complete the form below and submit it to us. </em></p>
+		</div>
+        <div class="main-form">
+                <div>
+                    <span>Today's Date:</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Dog Name:</span>
+                    <select id="dropdown" name="dogname" placeholder="Dog Name" required>
+                        <option selected value>Select a Dog name</option>
+                        <option value="bambie">Bambie</option>
+                        <option value="fidel">Fidel</option>
+                        <option value="iano">Iano</option>
+                        <option value="maxx">Maxx</option>
+                        <option value="milk">Milk</option>
+                        <option value="molly">Molly</option>
+                        <option value="nuggets">Nuggets</option>
+                        <option value="popo">Popo</option>
+                        <option value="rajie">Rajie</option>
+                        <option value="tisay">Tisay</option>
+                        <option value="tisoy">Tisoy</option>
+                        <option value="wayooo">Wayooo</option>
+                        </select>
+                </div>
+                <div>
+                    <span>Last Name:</span>
+                    <input type="text" name="lastname" id="name" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <span>First Name:</span>
+                    <input type="text" name="firstname" id="name" placeholder="First Name" required>
+                </div>
+                <div>
+                    <span>Age:</span>
+                   <input type="number" name="age" id="number" placeholder="Age" required>
+                   </div>
+                <div>
+                   <span>Gender:</span>
+                     <select id="dropdown" name="gender" placeholder="Gender" required>
+                   <option selected value>Select</option>
+                   <option value="female">Female</option>
+                   <option value="male">Male</option>
+                   <option value="prepare not to say">Prepare not to say</option>
+                     </select>
+                </div> 
+                <div>
+                    <span>Email address:</span>
+                    <input type="email" name="email" id="email" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <span>Phone Number:</span>
+                    <input type="text" name="phone" id="phone" placeholder="Write your number here..." required>
+                </div>
+                <div>
+                    <span>Address:</span>
+                    <input type="text" name="address" id="adress" placeholder="Enter your address here..." required> 
+                </div>
+                <div>
+                    <span>Town:</span>
+                    <input type="text" name="town" id="town" placeholder="Your town" required> 
+               </div>
+            <div>
+                <span>How many pets are already in your household?</span>
+                <input type="number" id="number" name="how many" min="1" max="10" placeholder="0">
+            </div>
+            <div>
+                <span>What type of housing you reside?</span>
+                <select id="dropdown" name="housing">
+                <option selected value>Select an option</option>
+                <option value="apt">Apartment</option>
+                <option value="condo"> Condo</option>
+                <option value="house">House</option>
+                <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <span>Why do you want to adopt a dog?</span>
+                <select id="dropdown" name="reason">
+                    <option selected value>Select an option</option>
+                    <option value="gif"> Gift</option>
+                    <option value="pet & companion"> Pet & Companion</option>
+                    <option value="breeding"> Breeding Dog</option>
+                    </select>
+               </div>
+               <div>
+                <span>Is anyone in your household allergic to pets?</span>
+                <select id="dropdown" name="allergy">
+                    <option selected value>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="none">None</option>
+                    <option value="sometimes">Sometimes</option>
+                </select>    
+            </div>
+                <div class="textarea">
+                    <span>How did you prepare yourself?</span>
+                    <textarea type="text" id="notes" name="prepare" rows="10" cols="100" placeholder=" Write here how did you prepare yourself for adoption."></textarea>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="Submit Application" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+  <div>
+</body>
+</html>
